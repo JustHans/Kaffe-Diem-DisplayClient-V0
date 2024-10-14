@@ -1,0 +1,53 @@
+:root{
+    --backgroundPrimary: darkgray;
+    --primaryText: black;
+    --secondaryText: darkgray;
+
+    --in_progress-order:lightgray;
+    --in_progress-background: darkgray;
+
+    --complete-order:lightgreen;
+    --complete-background: darkgreen;
+}
+
+
+#orders{
+    display: flex;
+    align-items: stretch;
+}
+.order_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    gap:10px;
+    margin-top: 10px;
+    padding:10px;
+
+    border-radius: 5px;
+}
+#dividerline{
+    width: 3px;
+    
+    background-color: gray;
+    flex-shrink: 0;
+}
+
+.order{
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+body{
+    background-color: var(--backgroundPrimary);
+
+    display:flex;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+.completeOrder{
+    background-color: var(--complete-order);
+}
+.in_progressOrder{
+    background-color: var(--in_progress-order);
+}
